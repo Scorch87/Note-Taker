@@ -3,6 +3,10 @@ let noteText;
 let saveNoteBtn;
 let newNoteBtn;
 let noteList;
+// const api = require('./routes/index.js');
+// const express = require('express')
+// const app = express();
+// app.use('/api', api);
 
 if (window.location.pathname === '/notes') {
   noteTitle = document.querySelector('.note-title');
@@ -181,5 +185,3 @@ if (window.location.pathname === '/notes') {
 }
 
 getAndRenderNotes();
-
-module.exports = {getNotes, saveNote}
